@@ -105,6 +105,7 @@
     
     NSMutableArray *array1=[[NSMutableArray alloc] initWithObjects:@"uuu",@"iii", nil];
     
+    
     [array1 insertObject:@"yyy" atIndex:1];
     
    // [array1 removeObjectAtIndex:1];
@@ -113,7 +114,13 @@
     
    // [array1 replaceObjectAtIndex:1 withObject:@"oiu"];
     
-    NSLog(@"array1:%@",array1);
+    for (int i =0; i < [array1 count]; i++) {
+        NSLog(@"array 1 obj %@:",[array1 objectAtIndex:i]);
+        
+    }
+
+    
+   // NSLog(@"array1:%@",array1);
     
     
     NSDictionary *mydict = @{@"subjects": @"mysub"};
