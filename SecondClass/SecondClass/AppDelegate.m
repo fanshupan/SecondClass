@@ -105,24 +105,30 @@
     
     NSMutableArray *array1=[[NSMutableArray alloc] initWithObjects:@"uuu",@"iii", nil];
     
+    [array1 insertObject:@"yyy" atIndex:1];
     
-    [array1 removeObjectAtIndex:1];
+   // [array1 removeObjectAtIndex:1];
     [array1 addObject:@"bbb"];
     [array1 addObject:@"ppp"];
     
-    [array1 replaceObjectAtIndex:1 withObject:@"oiu"];
+   // [array1 replaceObjectAtIndex:1 withObject:@"oiu"];
     
     NSLog(@"array1:%@",array1);
     
-    NSDictionary *dictionary1=[NSDictionary dictionaryWithObjectsAndKeys:@"key",@"value",@"key2",@"value2", nil];
+    
+    NSDictionary *mydict = @{@"subjects": @"mysub"};
+    
+   // NSDictionary *dictionary1=[NSDictionary dictionaryWithObjectsAndKeys:@"key",mydict,@"key2",@"value2", nil];
     
     
-    
-    NSDictionary *dictionary2 = @{@"name": @"shupan",@"age":@"29"};
+    //NSLog(@"dictionary 111 %@",dictionary1);
+    NSDictionary *dictionary2 = @{@"name": @"shupan",@"age":@"29",@"subject":mydict};
     NSString *name=[dictionary2 objectForKey:@"name"];
     
     [dictionary2 count];
     NSString *name2 = dictionary2[@"name"];
+    
+    NSLog(@"dictionary %@",dictionary2);
     
     
     
