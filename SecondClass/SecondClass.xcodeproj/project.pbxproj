@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18712E3519CFE63000093CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E419CD15D80065AB09 /* Foundation.framework */; };
+		18712E3619CFE63000093CB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E619CD15D80065AB09 /* CoreGraphics.framework */; };
+		18712E3719CFE63000093CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E819CD15D80065AB09 /* UIKit.framework */; };
+		18712E4B19CFE63000093CB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4FD19CD15D80065AB09 /* XCTest.framework */; };
+		18712E4C19CFE63000093CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E419CD15D80065AB09 /* Foundation.framework */; };
+		18712E4D19CFE63000093CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E819CD15D80065AB09 /* UIKit.framework */; };
+		18712E5519CFE63000093CB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18712E5319CFE63000093CB8 /* InfoPlist.strings */; };
+		18712E5719CFE63000093CB8 /* HomeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18712E5619CFE63000093CB8 /* HomeWorkTests.m */; };
 		7F66E4E519CD15D80065AB09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E419CD15D80065AB09 /* Foundation.framework */; };
 		7F66E4E719CD15D80065AB09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E619CD15D80065AB09 /* CoreGraphics.framework */; };
 		7F66E4E919CD15D80065AB09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66E4E819CD15D80065AB09 /* UIKit.framework */; };
@@ -22,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18712E4E19CFE63000093CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F66E4D919CD15D80065AB09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18712E3319CFE63000093CB8;
+			remoteInfo = HomeWork;
+		};
 		7F66E50119CD15D80065AB09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F66E4D919CD15D80065AB09 /* Project object */;
@@ -32,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18712E3419CFE63000093CB8 /* HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18712E4A19CFE63000093CB8 /* HomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18712E5219CFE63000093CB8 /* HomeWorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeWorkTests-Info.plist"; sourceTree = "<group>"; };
+		18712E5419CFE63000093CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18712E5619CFE63000093CB8 /* HomeWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeWorkTests.m; sourceTree = "<group>"; };
 		7F66E4E119CD15D80065AB09 /* SecondClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F66E4E419CD15D80065AB09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F66E4E619CD15D80065AB09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,6 +71,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18712E3119CFE63000093CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18712E3619CFE63000093CB8 /* CoreGraphics.framework in Frameworks */,
+				18712E3719CFE63000093CB8 /* UIKit.framework in Frameworks */,
+				18712E3519CFE63000093CB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18712E4719CFE63000093CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18712E4B19CFE63000093CB8 /* XCTest.framework in Frameworks */,
+				18712E4D19CFE63000093CB8 /* UIKit.framework in Frameworks */,
+				18712E4C19CFE63000093CB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F66E4DE19CD15D80065AB09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,11 +114,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18712E5019CFE63000093CB8 /* HomeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				18712E5619CFE63000093CB8 /* HomeWorkTests.m */,
+				18712E5119CFE63000093CB8 /* Supporting Files */,
+			);
+			path = HomeWorkTests;
+			sourceTree = "<group>";
+		};
+		18712E5119CFE63000093CB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18712E5219CFE63000093CB8 /* HomeWorkTests-Info.plist */,
+				18712E5319CFE63000093CB8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7F66E4D819CD15D80065AB09 = {
 			isa = PBXGroup;
 			children = (
 				7F66E4EA19CD15D80065AB09 /* SecondClass */,
 				7F66E50319CD15D80065AB09 /* SecondClassTests */,
+				18712E5019CFE63000093CB8 /* HomeWorkTests */,
 				7F66E4E319CD15D80065AB09 /* Frameworks */,
 				7F66E4E219CD15D80065AB09 /* Products */,
 			);
@@ -89,6 +148,8 @@
 			children = (
 				7F66E4E119CD15D80065AB09 /* SecondClass.app */,
 				7F66E4FC19CD15D80065AB09 /* SecondClassTests.xctest */,
+				18712E3419CFE63000093CB8 /* HomeWork.app */,
+				18712E4A19CFE63000093CB8 /* HomeWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +208,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18712E3319CFE63000093CB8 /* HomeWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18712E5C19CFE63000093CB8 /* Build configuration list for PBXNativeTarget "HomeWork" */;
+			buildPhases = (
+				18712E3019CFE63000093CB8 /* Sources */,
+				18712E3119CFE63000093CB8 /* Frameworks */,
+				18712E3219CFE63000093CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeWork;
+			productName = HomeWork;
+			productReference = 18712E3419CFE63000093CB8 /* HomeWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18712E4919CFE63000093CB8 /* HomeWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18712E5D19CFE63000093CB8 /* Build configuration list for PBXNativeTarget "HomeWorkTests" */;
+			buildPhases = (
+				18712E4619CFE63000093CB8 /* Sources */,
+				18712E4719CFE63000093CB8 /* Frameworks */,
+				18712E4819CFE63000093CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18712E4F19CFE63000093CB8 /* PBXTargetDependency */,
+			);
+			name = HomeWorkTests;
+			productName = HomeWorkTests;
+			productReference = 18712E4A19CFE63000093CB8 /* HomeWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7F66E4E019CD15D80065AB09 /* SecondClass */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F66E50D19CD15D80065AB09 /* Build configuration list for PBXNativeTarget "SecondClass" */;
@@ -191,6 +287,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Second;
 				TargetAttributes = {
+					18712E4919CFE63000093CB8 = {
+						TestTargetID = 7F66E4E019CD15D80065AB09;
+					};
 					7F66E4FB19CD15D80065AB09 = {
 						TestTargetID = 7F66E4E019CD15D80065AB09;
 					};
@@ -210,11 +309,28 @@
 			targets = (
 				7F66E4E019CD15D80065AB09 /* SecondClass */,
 				7F66E4FB19CD15D80065AB09 /* SecondClassTests */,
+				18712E3319CFE63000093CB8 /* HomeWork */,
+				18712E4919CFE63000093CB8 /* HomeWorkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18712E3219CFE63000093CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18712E4819CFE63000093CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18712E5519CFE63000093CB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F66E4DF19CD15D80065AB09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +351,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18712E3019CFE63000093CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18712E4619CFE63000093CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18712E5719CFE63000093CB8 /* HomeWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F66E4DD19CD15D80065AB09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +386,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18712E4F19CFE63000093CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18712E3319CFE63000093CB8 /* HomeWork */;
+			targetProxy = 18712E4E19CFE63000093CB8 /* PBXContainerItemProxy */;
+		};
 		7F66E50219CD15D80065AB09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7F66E4E019CD15D80065AB09 /* SecondClass */;
@@ -263,6 +399,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		18712E5319CFE63000093CB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18712E5419CFE63000093CB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		7F66E4ED19CD15D80065AB09 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +426,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18712E5819CFE63000093CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeWork/HomeWork-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HomeWork/HomeWork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18712E5919CFE63000093CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeWork/HomeWork-Prefix.pch";
+				INFOPLIST_FILE = "HomeWork/HomeWork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18712E5A19CFE63000093CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecondClass.app/SecondClass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeWork/HomeWork-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HomeWorkTests/HomeWorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18712E5B19CFE63000093CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecondClass.app/SecondClass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeWork/HomeWork-Prefix.pch";
+				INFOPLIST_FILE = "HomeWorkTests/HomeWorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		7F66E50B19CD15D80065AB09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,6 +635,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18712E5C19CFE63000093CB8 /* Build configuration list for PBXNativeTarget "HomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18712E5819CFE63000093CB8 /* Debug */,
+				18712E5919CFE63000093CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18712E5D19CFE63000093CB8 /* Build configuration list for PBXNativeTarget "HomeWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18712E5A19CFE63000093CB8 /* Debug */,
+				18712E5B19CFE63000093CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7F66E4DC19CD15D80065AB09 /* Build configuration list for PBXProject "SecondClass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -437,6 +667,7 @@
 				7F66E50F19CD15D80065AB09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F66E51019CD15D80065AB09 /* Build configuration list for PBXNativeTarget "SecondClassTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +676,7 @@
 				7F66E51219CD15D80065AB09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,129 +13,114 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     
     
-    int x=123;
-    int y=456;
-    NSString *astring=@"hello";
+    NSString *string1=@"abcdefg";
+    int string1length=[string1 length];
+    for (int i=0; i<=string1length; i++) {
+        NSLog(@"%d",i);
+    }
+    
+    //把a,b,c,d,e放到数组里
+    NSArray *array1=[NSArray arrayWithObjects:@"a",@"b",@"c",@"d",@"e",nil];
+    NSLog(@"array:%@",array1);
+    
+    //打印NSString This is year of 2014；2014用 int 类型
+    NSString *string2=@"This is year ";
+    int year=2014;
+    NSString *string3=[NSString stringWithFormat:@"%@ %d",string2,year];
+    NSLog(@"%@",string3);
     
     
+    //打印名字的长度
+    NSString *string4=@"fanshupan";
+    int string4lenth=[string4 length];
+    NSLog(@"Name length %d:",string4lenth);
     
-    UILabel *mylabel=[[UILabel alloc]init];
-    mylabel.frame=CGRectMake(10, 50, 200, 30);
-    mylabel.text=  [NSString stringWithFormat:@"x:%d y:%d %@",x,y,astring];
-    [self.window addSubview:mylabel];
-    
-    
-    
-    //格式化字符串
-    NSString *currency=@"$";
-    int money=200;
-    UILabel *mylable2=[[UILabel alloc]initWithFrame:CGRectMake(30, 100, 200, 30)];
-    mylable2.text=[NSString stringWithFormat:@"%@ %d",currency,money];
-    [self.window addSubview:mylable2];
-
-    
-    //类型的转换
-    NSString *bstring=@"123";
-    int bint=[bstring intValue];
-    NSLog(@"%d",bint);
-    
-   NSString *cstring=@"123.2";
-    double cint=[cstring doubleValue];
-    mylable2.text=[NSString stringWithFormat:@"%.2f",cint];
-    
-    //字符串对比
-    NSString *string1=@"abd";
-    NSString *string2=@"efg";
-    if (![string1 isEqualToString:string2]) {
-        mylable2.text=@" 不相等";
-        
+    //对比名字
+    NSString *stringName1=@"fanshupan";
+    NSString *stringName2=@"wuming";
+    if ([stringName1 isEqualToString:stringName2]) {
+        NSLog(@"Two name is the same");
     }
     else{
-    mylable2.text=@"相等";
-    
-        
-}
-    
-    for (int i =0; i <= 10; i++) {
-        if (i == 2) {
-            mylable2.text = [NSString stringWithFormat:@"%d",i];
-            
-        }
-        
-        //sleep(1);
+        NSLog(@"Two name is different");
     }
     
-    //分割数组
     
-    NSString *string3=@"h,e,l,l,o,1,2,3,4";
+    //申明2跟nsstring 然后合并
+    NSString *astring=@"This is the first string";
+    NSString *bstring=@"This is the second string";
+    NSString *cstring=[NSString stringWithFormat:@"%@ %@",astring,bstring];
+    NSLog(@"Consolidation two string are %@:",cstring);
     
-    NSArray *stringarray = [string3 componentsSeparatedByString:@","];
-    NSLog(@"string array %@",stringarray);
+    //申明一个数组，里面有5个元素，找到第三个元素
+    NSArray *array2=[NSArray arrayWithObjects:@"aaaaa",@"bbbbb",@"ccccc",@"ddddd",@"eeeee",nil];
+    NSString *stringArray=array2[2];
+    NSLog(@"%@",stringArray);
     
-    int string3length=[string3 length];//获取字符串长度
+    //申明一个数组，写出数组里面有多少跟元素
+    NSArray *array3=[NSArray arrayWithObjects:@"a",@"b",@"c",@"d",@"e",@"f",@"g",nil];
+    int array3count=[array3 count];
+    NSLog(@"The array3 count is %d",array3count);
     
-    NSString *subString = [string3 substringWithRange:NSMakeRange([string3 length]-1, 1)];
-    NSString *substring2 = [string3 substringToIndex:2];
-    NSString *substring3 = [string3 substringFromIndex:[string3 length]-1];
-    NSLog(@"substring :%@",subString);
+    //写一个动态数组，然后增加一个元素,在第二个位置增加一个元素，删除一个元素
+    NSMutableArray *array4=[[NSMutableArray alloc]initWithObjects:@"aaaa",@"bbbb",@"cccc", nil];
+    [array4 addObject:@"dddd"];
+    [array4 insertObject:@"ffff" atIndex:1];
+    NSLog(@"%@",array4);
     
-    
-    NSArray *array=[NSArray arrayWithObjects:@"a",@"b",@"c",@"d", nil];//不能原始类
-    
-    
-    
-    NSLog(@"array :%@",array);
-    
-    
-    int arraycount=[array count];//计算个数
-    NSLog(@"arraycount:%d",arraycount);
-    
-    NSString *string4=[array objectAtIndex:2];//具体某个数组对象
-    NSString *string5 = array[3];
-    NSString *string6 = [array lastObject];
-    NSLog(@"array object %@",string5);
+    [array4 removeObjectAtIndex:3];
+    NSLog(@"%@",array4);
     
     
+    NSDictionary *dictionary=@{@"name":@"shupan",@"age":@"29",@"date":@"2014-09-17"};
+    NSLog(@"dictionary is :%@",dictionary);
     
-    NSMutableArray *array1=[[NSMutableArray alloc] initWithObjects:@"uuu",@"iii", nil];
+    
+    NSDictionary *dictionary3=@{@"test1": @"10",@"test2":@"20"};
+    NSDictionary *dictionary2=@{@"rhymes": dictionary3,@"games":dictionary3,@"crayoning":dictionary3};
+    NSDictionary *dictionary1=@{@"name":@"shupan",@"age":@"29",@"subjects":dictionary2};
+    NSLog(@"The dictionary is %d",[dictionary1 count]);
+    
+                          
+    
+    NSArray *array5=[NSArray arrayWithObjects:@"aaa",@"bbb",@"ccc",nil];
+    int array5count=[array5 count];
+    NSLog(@"The count array5 is %d",array5count);
+    NSArray *array6=[array5 objectAtIndex:2];
+    NSLog(@" %@",array6);
+    
+    NSMutableArray *muarray=[NSMutableArray arrayWithCapacity:3];//初始化可变数组对象的长度如果后面代码继续添加数组超过长度6以后NSMutableArray的长度会自动扩充，6是自己可以设置的颗粒度。
+    [muarray addObject:@"a"];
+    [muarray addObject:@"b"];
+    [muarray addObject:@"c"];
+    [muarray addObject:@"d"];
+    [muarray addObject:@"e"];
+    [muarray insertObject:@"f" atIndex:2];
+    //[muarray removeObjectAtIndex:3];
+    NSRange range=NSMakeRange(0, 2);
+    [muarray removeObjectIdenticalTo:@"2" inRange:range];
+    NSLog(@"%@",muarray);
+    
+    //NSRange range=NSMakeRange(0, 5);取范围
+    //[array removeObjectIdenticalTo:(id) inRange:(NSRange)] : 在指定范围内删除指定的元素。
+    
+    NSDictionary *mudictionary=[NSDictionary dictionaryWithObjectsAndKeys:@"tets1",@"10",@"test2",@"20",nil];
+    NSEnumerator *enumerator1=[mudictionary keyEnumerator];
+    NSLog(@" key is %@",enumerator1);
     
     
-    [array1 insertObject:@"yyy" atIndex:1];
-    
-   // [array1 removeObjectAtIndex:1];
-    [array1 addObject:@"bbb"];
-    [array1 addObject:@"ppp"];
-    
-   // [array1 replaceObjectAtIndex:1 withObject:@"oiu"];
-    
-    for (int i =0; i < [array1 count]; i++) {
-        NSLog(@"array 1 obj %@:",[array1 objectAtIndex:i]);
-        
-    }
+    NSMutableDictionary *muDictionary=[NSMutableDictionary dictionaryWithCapacity:3];
+    [muDictionary setObject:@"aaa" forKey:@"10"];
+    [muDictionary setObject:@"bbb" forKey:@"20"];
+    [muDictionary removeObjectForKey:@"10"];
+    NSLog(@" all key %@ ",[muDictionary allKeys]);
+    NSLog(@" all value %@",[muDictionary allValues]);
+   
 
     
-   // NSLog(@"array1:%@",array1);
     
-    
-    NSDictionary *mydict = @{@"subjects": @"mysub"};
-    
-   // NSDictionary *dictionary1=[NSDictionary dictionaryWithObjectsAndKeys:@"key",mydict,@"key2",@"value2", nil];
-    
-    
-    //NSLog(@"dictionary 111 %@",dictionary1);
-    NSDictionary *dictionary2 = @{@"name": @"shupan",@"age":@"29",@"subject":mydict};
-    NSString *name=[dictionary2 objectForKey:@"name"];
-    
-    [dictionary2 count];
-    NSString *name2 = dictionary2[@"name"];
-    
-    NSLog(@"dictionary %@",dictionary2);
     
     
     
